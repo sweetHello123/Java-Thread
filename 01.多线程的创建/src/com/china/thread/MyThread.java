@@ -2,7 +2,7 @@ package com.china.thread;
 
 /**
  * @Author: china wu
- * @Description: 创建新线程的第一种方式：继承Thread类，重写run方法
+ * @Description: 创建新线程的第一种方式：继承Thread类，重写run方法(不推荐，单继承局限性)
  * @Date: 2020/7/28 12:33
  */
 public class MyThread extends Thread {
