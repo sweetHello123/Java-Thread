@@ -7,14 +7,14 @@ package com.china.thread;
  */
 public class ThreadYieldDemo {
     public static void main(String[] args) {
-        Thread01 thread0 = new Thread01();
-        Thread01 thread1 = new Thread01();
+        YieldThread thread0 = new YieldThread();
+        YieldThread thread1 = new YieldThread();
         new Thread(thread0, "线程1").start();
         new Thread(thread1, "线程2").start();
     }
 }
 
-class Thread01 implements Runnable {
+class YieldThread implements Runnable {
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName() + "线程开始执行");
