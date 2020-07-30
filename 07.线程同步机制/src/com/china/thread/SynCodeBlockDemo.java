@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @Author: china wu
- * @Description: 同步机制--同步代码块
+ * @Description: 同步机制--同步代码块(隐式锁)
  * @Date: 2020/7/30 13:54
  */
 public class SynCodeBlockDemo {

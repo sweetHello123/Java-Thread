@@ -19,7 +19,7 @@ public class LockDemo {
 
         private int ticketNum = 200;
 
-        // 定义lock锁
+        // 定义lock锁(可重用锁)
         private final ReentrantLock lock = new ReentrantLock();
 
         @Override
