@@ -5,16 +5,16 @@ package com.china.thread;
  * @Description: 线程同步机制--同步方法
  * @Date: 2020/7/30 12:59
  */
-public class SaleTicket {
+public class SynMethodDemo {
     public static void main(String[] args) {
-        TicketRunnable runnable = new TicketRunnable();
+        SaleTicket runnable = new SaleTicket();
         new Thread(runnable, "1号窗口").start();
         new Thread(runnable, "2号窗口").start();
         new Thread(runnable, "3号窗口").start();
     }
 }
 
-class TicketRunnable implements Runnable {
+class SaleTicket implements Runnable {
 
     private int ticketNum = 10;
 
