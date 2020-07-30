@@ -29,7 +29,7 @@ public class TicketThread implements Runnable {
     }
 
     public static void main(String[] args) {
-        TicketThread ticketThread = new TicketThread();
+        com.china.thread.TicketThread ticketThread = new com.china.thread.TicketThread();
         new Thread(ticketThread, "1号窗口").start();
         new Thread(ticketThread, "2号窗口").start();
         new Thread(ticketThread, "3号窗口").start();
